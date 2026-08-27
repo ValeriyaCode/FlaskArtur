@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Students</title>
+</head>
+<body>
+  <h1>Best students:</h1>
+
+  <!--
+    ul - НЕнумерований список
+    ol - нумерований список
+    li - пункт списку
+  -->
+
+  <ul>
+      {% for stud in students %}
+        <li> {{ stud }} </li>
+      {% endfor %}
+  </ul>
+
+</body>
+</html>

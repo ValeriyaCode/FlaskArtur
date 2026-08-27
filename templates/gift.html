@@ -2,9 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>Gift</title>
 </head>
 <body>
-$END$
+  <h1>Your gift</h1>
+  <p>Get discount</p>
+
+  <!-- strong - виділяє текст (робить жирним)-->
+  {% if is_lucky %}
+    <p><strong>Discount:</strong> {{ discount }}</p>
+  {% else %}
+    <p>You loser</p>
+  {% endif %}
 </body>
 </html>
