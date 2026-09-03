@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Main</title>
+</head>
+<body>
+
+  <!--
+    form - форма
+    input - поле введення
+    button - кнопка
+    label - підказка біля input
+
+    параметр placeholder - підказка всередені input
+  -->
+
+  <h3>Search:</h3>
+
+  <form method="GET">
+    <input name="search" type="text" placeholder="type request" required>
+    <button type="submit">To search</button>
+  </form>
+
+  {% if search %}
+    <p>You search: {{ search }}</p>
+  {% endif %}
+
+  <h3>Password:</h3>
+
+  <form method="POST">
+    <label for="user_password">Password:</label>
+    <input name="password" type="password" id="user_password">
+    <button type="submit">Send</button>
+  </form>
+
+</body>
+</html>
