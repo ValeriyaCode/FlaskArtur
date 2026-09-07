@@ -28,6 +28,11 @@
 
   <h3>Password:</h3>
 
+  <!-- get_flashed_messages - повертає список flash-повідомлень -->
+  {% for message in get_flashed_messages() %}
+    <strong>{{ message }}</strong>
+  {% endfor %}
+
   <form method="POST">
     <label for="user_password">Password:</label>
     <input name="password" type="password" id="user_password">
