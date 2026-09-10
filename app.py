@@ -25,4 +25,3 @@ def main():
     return render_template('index.html', search=user_search)
 
 app.run(debug=True)
-
