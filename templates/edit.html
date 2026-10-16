@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}
+Edit
+{% endblock %}
+
+{% block content %}
+<h2>edit product</h2>
+<form method="POST">
+    <label for="cateory_product">enter category</label>
+    <label for="price_product">enter price</label>
+    <input type="text" name="new_category" value="{{old_product_info[0]}}" id="cateory_product">
+    <input type="number" name="new_price" value="{{old_product_info[1]}}" id="price_product">
+    <button type="submit">sumbit</button>
+</form>
+{% endblock %}
