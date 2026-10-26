@@ -1,12 +1,14 @@
-<nav>
-    <a href="{{ url_for('products') }}">product manager</a>
-    <div>
-        {% if current_company == None %}
-            <a href="{{ url_for('register_company') }}"><button>register</button></a>
-            <a href="{{ url_for('login') }}"><button>login</button></a>
-        {% else %}
-            <a href="{{ url_for('profile') }}"><button>profile</button></a>
-            <a href="{{ url_for('logout') }}"><button>logout</button></a>
-        {% endif %}
+<nav class="navbar bg-2">
+    <div class="container">
+      <a href="{{ url_for('products') }}" class="navbar-brand">product manager</a>
+      <div>
+          {% if current_company == None %}
+              <a href="{{ url_for('register_company') }}"><button class="btn-outline theme-inverse">register</button></a>
+              <a href="{{ url_for('login') }}"><button class="btn-outline theme-inverse" >login</button></a>
+          {% else %}
+              <a href="{{ url_for('profile') }}"><button class="btn-solid theme-inverse">profile</button></a>
+              <a href="{{ url_for('logout') }}"><button class="btn-outline theme-inverse">logout</button></a>
+          {% endif %}
+      </div>
     </div>
 </nav>

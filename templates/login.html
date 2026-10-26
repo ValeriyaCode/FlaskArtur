@@ -5,10 +5,20 @@ Login
 {% endblock %}
 
 {% block content %}
-<h2>login account</h2>
+<h2 class="my-4">login account</h2>
+
 <form method="POST">
-    <input name="company_name" type="text" placeholder="input name of company">
-    <br><input name="password" type="password" placeholder="input password">
-    <button type="submit">register</button>
+    <div class="col-4">
+      <input class="form-control mb-4" name="company_name" type="text" placeholder="name of company">
+    </div>
+
+    <div  class="col-4">
+      <input  class="form-control mb-4 col-3" name="password" type="password" placeholder="password">
+    </div>
+
+    <div class="col-2">
+      <button class="btn-solid theme-inverse w-100" type="submit">register</button>
+    </div>
 </form>
+
 {% endblock %}
